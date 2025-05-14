@@ -1,0 +1,42 @@
+Comandos de Git:
+----------------
+
+1. Inicializar un nuevo repositorio:
+    -> $ git init
+
+2. Agregar archivos:
+    a. Agregar todos los archivos en el folder actual:
+        -> $ git add .
+    b. Agregar archivos específicos:
+        -> $ git add <nombre de archivo>
+
+3. Crear un commit (definir una nueva versión con los cambios hechos para agregar al historial):
+    -> $ git commit -m "<descripción de cambios>"
+
+4a. Vincular repositorio local a repositorio remoto:
+    -> $ git remote add origin <link de repositorio remoto>
+
+4b. Sincronizar cambios con repositorio remoto (subir/mandar cambios a la nube):
+    -> $ git push -u origin <rama>
+
+Notas:
+------
+
+- En cualquier momento pueden verificar el estado actual del repositorio, para ver cuales archivos
+  han cambiado, cuales no están monitoreados por Git ("untracked files"), cuales archivos están
+  "preparados" para un commit y cuales no ("staged" vs. "unstaged" changes), etc.
+    -> Comando para verificar estado de repositorio:
+        -> $ git status
+
+- Asegurarse que su Git local este configurado con su usuario y correo de su cuenta de Github:
+    - El commit que crean localmente se "firma" con los credenciales configurados.
+    - Si esos credenciales no tienen acceso al repositorio remoto, no pueden hacer git push.
+    - Comandos para configurar credenciales:
+        -> $ git config --global user.name <usuario>
+        -> $ git config --global user.email <email>
+    - Comando para verificar configuración local:
+        -> $ git config --global --list
+
+- Si su repositorio local no esta sincronizado con el remoto, no pueden hacer push.
+    - Comando para sincronizar cambios remotos en un repositorio local:
+        -> $ git pull
