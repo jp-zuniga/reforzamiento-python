@@ -1,13 +1,16 @@
-'''Crear un programa donde el usuario pueda crear, ver, modificar y eliminar contactos (nombre y teléfono).'''
+"""Crear un programa donde el usuario pueda crear, ver, modificar y eliminar contactos (nombre y teléfono)."""
 
 import os
 
+
 def clear():
-    os.system('cls')
+    os.system("cls")
+
 
 listaContactos = []
 
-def agregarContacto():
+
+def agregar_contacto():
     nombre = input("Ingrese el nombre del contacto: ")
     numero = int(input("Ingrese el número del contacto: "))
 
@@ -15,6 +18,7 @@ def agregarContacto():
     listaContactos.append(contactos)
     clear()
     print("El contacto se registró correctamente!")
+
 
 def eliminar():
     if len(listaContactos) == 0:
@@ -30,15 +34,19 @@ def eliminar():
             else:
                 print("Contacto no encontrado.")
 
-def ImprimirPantalla():
+
+def imprimir_pantalla():
     if len(listaContactos) == 0:
         print("No hay contactos en la agenda.")
     else:
         print("Lista de contactos:")
-        for i, contacto in enumerate (listaContactos, start=1): # contacto es cada elemento de la lista
+        for i, contacto in enumerate(
+            listaContactos, start=1
+        ):  # contacto es cada elemento de la lista
             print(f"{i}. Contacto: {contacto[0]}, número: {contacto[1]}")
 
-def ModificarContacto():
+
+def modificar_contacto():
     if len(listaContactos) == 0:
         print("No hay contactos en la agenda")
     else:
@@ -54,8 +62,8 @@ def ModificarContacto():
                 print("Contacto modificado con éxito!")
                 return
 
-def Menu():
-    
+
+def menu():
     while True:
         print("\n---- Menú de opciones ----")
         print("1. Registrar nuevo contacto")
@@ -67,22 +75,21 @@ def Menu():
         opcion = int(input("Ingrese una opción: "))
 
         if opcion == 1:
-            agregarContacto()
+            agregar_contacto()
         elif opcion == 2:
             eliminar()
         elif opcion == 3:
-            ImprimirPantalla()
+            imprimir_pantalla()
         elif opcion == 4:
-            ModificarContacto()
+            modificar_contacto()
         elif opcion == 5:
             print("Saliendo del programa...")
             break
         else:
-            print("Opción inválidad. Inténtelo de nuevo.")
+            print("Opción inválida. Inténtelo de nuevo.")
             input("Presione Enter para volver al menú de inicio.")
             clear()
-        
-if __name__ == '__main__':
-    Menu()
 
 
+if __name__ == "__main__":
+    menu()
