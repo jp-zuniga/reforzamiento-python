@@ -1,0 +1,58 @@
+[
+    {
+        "titulo": "Vladislava",
+        "autores": [
+            {
+                "nombre": "Shell",
+                "apellido": "Moute"
+            }
+        ],
+        "anio": 2007,
+        "edicion": "2da",
+        "isbn": 2498
+    },
+    {
+        "titulo": "Valdur",
+        "autores": [
+            {
+                "nombre": "Steven",
+                "apellido": "Vlad"
+            }
+        ],
+        "anio": 2007,
+        "edicion": "2da edicion",
+        "isbn": 5919
+    },
+    {
+        "titulo": "ElPrincipito",
+        "autores": [
+            {
+                "nombre": "Maria",
+                "apellido": "Gozo"
+            },
+            {
+                "nombre": "Authur",
+                "apellido": "Pend"
+            },
+            {
+                "nombre": "Stv",
+                "apellido": "Marlonne"
+            }
+        ],
+        "anio": 2007,
+        "edicion": "2da",
+        "isbn": 2095
+    },
+    {
+        "titulo": "dfgdfsg",
+        "autores": [
+            {
+                "nombre": "Stv",
+                "apellido": "Mejia"
+            }
+        ],
+        "anio": 2007,
+        "edicion": "2da",
+        "isbn": 3712
+    }
+]
