@@ -1,0 +1,33 @@
+Comandos ocupados en la sesión:
+-------------------------------------------------------
+
+Para instalar customtkinter con pip (manejador de paquetes de Python):
+    > pip install customtkinter
+
+    Si aparece un mensaje como "Comando pip no reconocido", intenten:
+    > py -m pip install customtkinter
+
+-------------------------------------------------------
+
+Para instalar el manejador de proyectos uv:
+    Linux:
+        $ curl -LsSf https://astral.sh/uv/install.sh | sh
+    Windows:
+        PS> powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+-------------------------------------------------------
+
+Para crear un proyecto con uv:
+    > uv init <nombre-proyecto>
+
+    Agregar dependencias:
+        > uv add <nombre-paquete>
+
+    Para ver descripción y opciones de un comando:
+        > uv -h
+        > uv <comando> -h
+
+-------------------------------------------------------
+
+Documentación de uv:
+    - https://docs.astral.sh/uv/
