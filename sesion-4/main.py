@@ -1,0 +1,18 @@
+"""
+Crea un programa que simule un sistema básico de gestión de una biblioteca. El programa debe permitir:
+- Agregar libros (título, autor, año, ISBN).
+- Mostrar todos los libros registrados.
+- Buscar un libro por título o ISBN.
+- Eliminar un libro por ISBN.
+- Salir del programa.
+"""
+
+from views.menu import menu
+
+
+def main():
+    menu()
+
+
+if __name__ == "__main__":
+    main()

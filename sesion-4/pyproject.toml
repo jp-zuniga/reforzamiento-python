@@ -1,0 +1,8 @@
+[project]
+name = "sis-biblioteca"
+version = "0.1.0"
+description = "Simula un sistema de gestión de biblioteca."
+requires-python = ">=3.12"
+dependencies = [
+    "customtkinter>=5.2.2",
+]
