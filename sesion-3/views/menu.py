@@ -1,8 +1,8 @@
 from .inputs import Inputs
 import os
 
-def menu():
 
+def menu():
     inputs: Inputs = Inputs()
     while True:
         print("=== Sistema de Gestion de Biblioteca ===")
@@ -25,7 +25,7 @@ def menu():
             case "4":
                 inputs.case_four()
                 os.system("pause")
-            case "5": 
+            case "5":
                 print("Saliendo...")
                 break
             case _:
