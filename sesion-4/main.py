@@ -7,11 +7,12 @@ Crea un programa que simule un sistema básico de gestión de una biblioteca. El
 - Salir del programa.
 """
 
-from views.menu import menu
+from gestion_biblio import views
 
 
 def main():
-    menu()
+    instancia = views.BiblioGUI()
+    instancia.mainloop()
 
 
 if __name__ == "__main__":
