@@ -82,9 +82,9 @@ class Inputs:
         """
 
         ventana = self._setup_ventana("Agregar Libro", "500x400")
-        ctk.CTkLabel(ventana, text="Agregar Nuevo Libro", font=ctk.CTkFont(size=16)).pack(
-            pady=10
-        )
+        ctk.CTkLabel(
+            ventana, text="Agregar Nuevo Libro", font=ctk.CTkFont(size=16)
+        ).pack(pady=10)
 
         titulo_entry = self._crear_campo_input(ventana, "Título del libro:")
         autor_entry = self._crear_campo_input(ventana, "Autor:")
